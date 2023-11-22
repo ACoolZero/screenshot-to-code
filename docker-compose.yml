@@ -30,5 +30,7 @@ services:
       - "5173:5173"
     links:
       - backend
+    depends_on:
+      - backend
     environment:
       - VITE_WS_BACKEND_URL
